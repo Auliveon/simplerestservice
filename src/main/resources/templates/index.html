@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block layout:insert="~{fragments/bootstrap.html}"/>
+<script src="js/index.js"></script>
+<body>
+<th:block layout:insert="~{fragments/nav-bar.html}"/>
+<div class="container-fluid row">
+    <div class="col-3 mt-2">
+    <button class="btn-secondary btn rounded-0" onclick="showModal()">Добавить</button>
+    </div>
+    <div class="col-12 mt-2">
+        <table class="table table-success table-striped">
+            <colgroup>
+
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col">Аватар</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Возраст</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</main>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editModalLabel"
+     aria-hidden="true">
+</div>
+<th:block layout:insert="~{fragments/footer.html}"/>
+</body>
+</html>

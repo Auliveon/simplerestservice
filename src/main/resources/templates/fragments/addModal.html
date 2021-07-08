@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addModalLabel">Добавить сотрудника</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/save" method="post" id="addForm" onsubmit="addFormEvent(event)">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Аватар</label>
+                    <input class="form-control" type="file" id="formFile" name="maintenanceFile">
+                </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Employee's name">
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Email address</label>
+                <input type="number" class="form-control" id="age" name="age" placeholder="Employee's age">
+            </div>
+            <div>
+            <button class="btn-secondary btn rounded-0" id="#saveEmployee">Save</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</html>
